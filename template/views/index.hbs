@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather Application</title>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head> 
+    <body>
+        <h2>{{>header}} </h2>
+        <h2 class="hedt1">{{message}}</h2>
+
+<div class="weather">
+        <form id="form1">
+            <input type="text" id="address" placeholder="Enter city name">
+            <button class="search">Search</button>
+        </form>
+       
+        <div class="result">
+        <p id="location"> Location:{{  location}} </p>
+        <p id="forecast">Forecast: {{   forcast}} </p>
+        <p id="latitude">Latitude: {{   latitude }} </p>
+        <p id="longitude">Longitude: {{  longitude }}</p>
+        <p id="error"></p>
+        </div>
+        </div>
+        
+        
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
